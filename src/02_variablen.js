@@ -24,20 +24,28 @@
    JS ist eine untypisierte Sprache!
 */
 
-let test; // Deklaration
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("--------------");
-test = "hello"; //string
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("--------------");
-test = 2; // number
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("--------------");
-test = true; // boolean
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("--------------");
+// let test; // Deklaration
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("--------------");
+// test = "hello"; //string
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("--------------");
+// test = 2; // number
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("--------------");
+// test = true; // boolean
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
 
+/* Variablen vs. Konstanten in JS */
+
+let test; // Deklaration
+test = "hi"; // Wertzuweisung (Initialisierung)
+test = "hello";
+console.log("Inhalt: " + test); // Ausgabe
+
+const test2 = "Hi!"; //Deklaration + Wertzuweisung
+console.log("Inhalt: " + test2); // Ausgabe
