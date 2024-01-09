@@ -42,5 +42,11 @@
 
 /* Variablen vs. Konstanten in JS */
 
+// let test; // deklaration
+// test = "hi"; // wertezuweisung //Variable
+// test = "hallo";
+// console.log("Inhalt: " + test); // Ausgabe 
 
-
+// const test2 = "Hi!"; // deklaration 
+// test2 = "hello!";                     //Constante Variable
+// console.log("Inhalt: "  + test2); //Ausgabe 
