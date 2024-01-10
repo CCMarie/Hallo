@@ -50,3 +50,4 @@
 // const test2 = "Hi!"; // deklaration 
 // test2 = "hello!";                     //Constante Variable
 // console.log("Inhalt: "  + test2); //Ausgabe 
+
