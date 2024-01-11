@@ -1,7 +1,7 @@
 // Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
-const ageJohn = 32;
+const ageJohn = 35;
 const ageMark = 30;
 
 // Deklaration
@@ -27,10 +27,94 @@ isJohnEqual = (ageJohn == ageMark);
 //if (true)
 //if (false)
 // if(isJohnOlder)
-if(ageJohn > ageMark)
+//if(ageJohn > ageMark)
 
 
-{
-    console.log("John is älter");
+//{
+//    console.log("John is älter");
+//
+//}
 
+
+/************ IF - ELSE  ************/
+// mit Alternative  if mit viereckigen kasten 
+// entweder ja oder nein
+
+//if (condition) 
+//if (true)
+
+//if(isJohnOlder)
+//if(ageJohn > ageMark)
+//{
+//   console.log("John ist älter");
+//} 
+//else 
+
+//{
+//    console.log("John ist Jünger");
+//}
+
+/************  Ternäre (ternary) Schreibweise ************/
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
+
+/************ IF - ELSE IF  ************/
+// mit alternativen Fällen (älter, jünger, gleich alt)
+
+
+
+
+
+
+
+
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName  = "Jane";
+let jop;
+
+jop = "driver"; // fährt Taxi / Uber
+//job = "diver";   // .. taucht im Rhein! 
+//job = "artist" // malt sie ein Bild
+
+
+//switch (key) 
+//{
+//    case "driver":
+//        console.log(firstName + " fährt Taxi!");
+//       break;
+//    case "diver":
+//        console.log(firstName + "taucht im Rhein");
+//        break;
+//        case "artist" ;
+//        console.log (firstName + "malt ein bild!");
+//        break;
+//
+//      default:
+//
+//        console.log("Jane macht etwas anderes!");
+//
+//        break;
+//}
+
+
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+
+const value = 1;
+
+switch (cond) {
+    case (value ==1):
+        console.log("Value hat den Wert  1.");
+        break;
+     case (value ==2):
+     console.log("Value hat den Wert  2.");
+     break;
+    
+    default:
+        console.log("Value hat einen anderen Wert.");
+        break;
 }

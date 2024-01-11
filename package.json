@@ -2,7 +2,7 @@
   "name": "hallo",
   "version": "1.0.0",
   "description": "Prozuduale Programmierung",
-  "main": "src/06_controlflow.js",
+  "main": "src/07_codechallenge_II.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,3 +13,4 @@
     "prompt-sync": "^4.2.0"
   }
 }
+
