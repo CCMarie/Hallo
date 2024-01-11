@@ -24,5 +24,5 @@ isJohnOlder = (ageJohn > ageMark); // test wahr oder unwahr
 isJohnEqual = (ageJohn == ageMark);
 console.log ("isJohnOlder: " + isJohnOlder);
 console.log ("isJohnequal: " + isJohnEqual);
-console.log ("----------------")
+console.log ("----------------");
 
