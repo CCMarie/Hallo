@@ -102,6 +102,7 @@ function ausgabeNameSRP(firstName, familyName) {      //Parameter
         const GAP = " ";
     let outputStr = "hallo, " + firstName + GAP + familyName + "!"
     return outputStr;
+    console.log("hi");
     
  }
 
