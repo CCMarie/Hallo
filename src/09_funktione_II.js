@@ -15,20 +15,81 @@
 // output("hello");
 // output(2);
 
- output(divide(4,2));
- output(divide(3,2));
- output(divide(3,-2));
- output(divide(0,2));
- output(divide(3,0));
- output(divide(0,0));
+const prompt = require('prompt-sync')({sigint: true});
+
+
+const ERROR_STR_DIV = "Division durch 0 nicht möglich!";
+const ERROR_STR_GEN = "Irgendwas ging schief!";
+
+startAPP();
+function startAPP() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl1? "));
+}
+function getNum2() {
+	return parseInt(prompt("Zahl2? "));
+}
+function getOp() {
+	return prompt("OP?: ");
+}
+
+// module: calculator | tests:
+// agreement : "+","-","*",":","/"
+//output(calculator(3,2,"+"));
+//output(calculator(3,2,"-"));
+//output(calculator(3,2,"*"));
+//output(calculator(3,2,":"));
+//output(calculator(3,2,"/"));
+//output(calculator(3,0,"/"));
+//output(calculator(3,2,"#?!"));
+
+function calculator(a,b,op) {
+
+
+	switch (op) {
+		case "+": //add ()
+			
+			return add(a,b);
+		case "-": //sub()
+			
+			return subtract(a,b);
+		case "*": //Mul()
+			
+			return multiply (a,b);
+		case "/": //DIV //
+		case ":":
+			return divide(a,b);
+		default:
+			return ERROR_STR_GEN;
+	}
+	
+	
+}
+
+
+ //output(divide(4,2));
+ //output(divide(3,2));
+ //output(divide(3,-2));
+ //output(divide(0,2));
+ //output(divide(3,0));
+ //output(divide(0,0));
 
 function divide(a,b) {
+
+	if (b == 0) {
+
+		return ERROR_STR_DIV;
+		
+	}
 
 	if (b !== 0) {    // b ist ungleich null
 		return a / b;
 	} else {
 
-		return "Division durch null ist nicht definiert";
+		return ERROR_STR_DIV;
 		
 	}
 
